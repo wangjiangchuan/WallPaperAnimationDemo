@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTheme" parent="@android:style/Theme.Wallpaper">
+
+        <item name="android:windowAnimationStyle">@style/WallPaperAnimation</item>
+    </style>
+
+    <style name="WallPaperAnimation" parent="android:Animation">
+        <item name="android:wallpaperOpenEnterAnimation">@anim/wallpaper_open_enter</item>
+        <item name="android:wallpaperOpenExitAnimation">@anim/wallpaper_open_exit</item>
+
+        <item name="android:wallpaperCloseEnterAnimation">@anim/wallpaper_open_enter</item>
+        <item name="android:wallpaperCloseExitAnimation">@anim/wallpaper_open_exit</item>
+
+    </style>
+
+</resources>
