@@ -7,24 +7,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="animation.meizu.cuicui.wallpaperanimationdemo.SecondActivity">
+    tools:context="animation.meizu.cuicui.wallpaperanimationdemo.ThirdActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/second_next_act"
-            android:text="jump to firstActivity"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/second_third_act"
-            android:text="ThirdActivity"/>
+            android:id="@+id/third_close_but"
+            android:text="CLOSE ACTIVITY"/>
     </LinearLayout>
 
 </RelativeLayout>

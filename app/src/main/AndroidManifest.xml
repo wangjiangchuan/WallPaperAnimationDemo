@@ -10,7 +10,9 @@
         android:theme="@style/AppTheme">
 
         <!-- First Activity -->
-        <activity android:name=".FirstActivity">
+        <activity
+            android:name=".FirstActivity"
+            android:theme="@style/FirstTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,10 +20,15 @@
             </intent-filter>
         </activity>
 
-
+        <!--Second Activity-->
         <activity
             android:name=".SecondActivity"
-            android:theme="@style/MyTheme">
+            android:theme="@style/SecondTheme"></activity>
+
+        <!--Third Activity-->
+        <activity
+            android:name=".ThirdActivity"
+            android:theme="@style/ThirdTheme">
 
         </activity>
     </application>

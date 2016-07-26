@@ -8,18 +8,56 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="MyTheme" parent="@android:style/Theme.Wallpaper">
 
-        <item name="android:windowAnimationStyle">@style/WallPaperAnimation</item>
+    <!--First Animation-->
+    <style name="FirstTheme" parent="AppTheme">
+        <!--wallpaper-->
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowAnimationStyle">@style/FirstAnimation</item>
+    </style>
+    <style name="FirstAnimation" parent="android:Animation">
+        le name="WallPaperAnimation" parent="android:Animation">
+        <item name="android:wallpaperOpenEnterAnimation">@anim/wallpaper_open_enter</item>
+        <item name="android:wallpaperOpenExitAnimation">@anim/wallpaper_open_exit</item>
+        <!---->
+        <item name="android:wallpaperCloseEnterAnimation">@anim/wallpaper_close_enter</item>
+        <item name="android:wallpaperCloseExitAnimation">@anim/wallpaper_close_exit</item>
     </style>
 
-    <style name="WallPaperAnimation" parent="android:Animation">
+
+    <!--second Animation-->
+    <style name="SecondTheme" parent="@android:style/Theme.Wallpaper">
+
+        <item name="android:windowAnimationStyle">@style/SecondAnimation</item>
+    </style>
+    <style name="SecondAnimation" parent="android:Animation">
         <item name="android:wallpaperOpenEnterAnimation">@anim/wallpaper_open_enter</item>
         <item name="android:wallpaperOpenExitAnimation">@anim/wallpaper_open_exit</item>
 
-        <item name="android:wallpaperCloseEnterAnimation">@anim/wallpaper_open_enter</item>
-        <item name="android:wallpaperCloseExitAnimation">@anim/wallpaper_open_exit</item>
+        <!---->
+        <item name="android:wallpaperCloseEnterAnimation">@anim/wallpaper_close_enter</item>
+        <item name="android:wallpaperCloseExitAnimation">@anim/wallpaper_close_exit</item>
 
+        <item name="android:wallpaperIntraOpenEnterAnimation">@anim/wallpaper_open_enter</item>
+        <item name="android:wallpaperIntraOpenExitAnimation">@anim/wallpaper_open_exit</item>
+
+
+        <item name="android:wallpaperIntraCloseEnterAnimation">@anim/wallpaper_open_enter</item>
+        <item name="android:wallpaperIntraCloseExitAnimation">@anim/wallpaper_open_exit</item>
+    </style>
+
+
+    <!--Third Animation -->
+    <style name="ThirdTheme" parent="android:Theme.Wallpaper">
+        <item name="android:windowAnimationStyle">@style/ThirdAnimation</item>
+    </style>
+
+    <style name="ThirdAnimation" parent="android:Animation">
+        <item name="android:wallpaperIntraOpenEnterAnimation">@anim/wallpaper_close_enter</item>
+        <item name="android:wallpaperIntraOpenExitAnimation">@anim/wallpaper_close_exit</item>
+
+        <item name="android:wallpaperIntraCloseEnterAnimation">@anim/wallpaper_close_enter</item>
+        <item name="android:wallpaperIntraCloseExitAnimation">@anim/wallpaper_close_exit</item>
     </style>
 
 </resources>
